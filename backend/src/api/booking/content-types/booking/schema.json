@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "singularName": "booking",
+    "pluralName": "bookings",
+    "displayName": "Booking",
+    "description": "Client shoot bookings, linked enquiries, audit log and payment statuses"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bookingRef": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "enquiryId": {
+      "type": "string"
+    },
+    "enquiryRef": {
+      "type": "string"
+    },
+    "clientName": {
+      "type": "string",
+      "required": true
+    },
+    "clientEmail": {
+      "type": "email",
+      "required": true
+    },
+    "clientPhone": {
+      "type": "string",
+      "required": true
+    },
+    "serviceName": {
+      "type": "string"
+    },
+    "packageName": {
+      "type": "string"
+    },
+    "packagePriceSnapshot": {
+      "type": "decimal"
+    },
+    "eventDate": {
+      "type": "date",
+      "required": true
+    },
+    "confirmedShootDate": {
+      "type": "date"
+    },
+    "confirmationDate": {
+      "type": "datetime"
+    },
+    "eventTime": {
+      "type": "string"
+    },
+    "eventLocation": {
+      "type": "text"
+    },
+    "totalAmount": {
+      "type": "decimal",
+      "required": true
+    },
+    "advanceAmount": {
+      "type": "decimal",
+      "required": true
+    },
+    "paidAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "paymentStatus": {
+      "type": "enumeration",
+      "enum": ["Pending", "Advance Paid", "Fully Paid", "Refunded"],
+      "default": "Pending"
+    },
+    "razorpayOrderId": {
+      "type": "string"
+    },
+    "razorpayPaymentId": {
+      "type": "string"
+    },
+    "bookingStatus": {
+      "type": "enumeration",
+      "enum": ["Pending", "Confirmed", "Rejected", "Rescheduled", "In Progress", "Completed", "Cancelled"],
+      "default": "Pending"
+    },
+    "assignedPhotographer": {
+      "type": "string"
+    },
+    "additionalNotes": {
+      "type": "text"
+    },
+    "auditLog": {
+      "type": "json"
+    }
+  }
+}

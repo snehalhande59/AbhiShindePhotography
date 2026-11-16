@@ -1,0 +1,137 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enquiries",
+  "info": {
+    "singularName": "enquiry",
+    "pluralName": "enquiries",
+    "displayName": "Enquiry",
+    "description": "Customer photography inquiries with photographer selection, interactive dates, and WhatsApp notifications"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "enquiryId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "customerName": {
+      "type": "string",
+      "required": true
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "countryCode": {
+      "type": "string",
+      "default": "+91"
+    },
+    "mobileNumber": {
+      "type": "string",
+      "required": true
+    },
+    "whatsappNumber": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "photographyCategory": {
+      "type": "string",
+      "required": true
+    },
+    "preferredPhotographer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::team-member.team-member"
+    },
+    "preferredPhotographerName": {
+      "type": "string"
+    },
+    "selectedService": {
+      "type": "string",
+      "required": true
+    },
+    "selectedPackage": {
+      "type": "string",
+      "required": true
+    },
+    "packagePriceSnapshot": {
+      "type": "decimal"
+    },
+    "requestedShootDate": {
+      "type": "date",
+      "required": true
+    },
+    "preferredShootDate": {
+      "type": "date"
+    },
+    "preferredShootTime": {
+      "type": "string"
+    },
+    "eventDate": {
+      "type": "date"
+    },
+    "shootLocation": {
+      "type": "string",
+      "required": true
+    },
+    "shootCity": {
+      "type": "string"
+    },
+    "shootArea": {
+      "type": "string"
+    },
+    "venueName": {
+      "type": "string"
+    },
+    "eventType": {
+      "type": "string"
+    },
+    "guestCount": {
+      "type": "integer"
+    },
+    "shootDuration": {
+      "type": "string"
+    },
+    "specialInstructions": {
+      "type": "text"
+    },
+    "additionalRequirements": {
+      "type": "text"
+    },
+    "referenceImages": {
+      "type": "json"
+    },
+    "referenceVideo": {
+      "type": "string"
+    },
+    "whatsappConsent": {
+      "type": "boolean",
+      "default": true
+    },
+    "notificationStatus": {
+      "type": "enumeration",
+      "enum": ["Pending", "Delivered", "Failed", "Fallback"],
+      "default": "Delivered"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["New", "Contacted", "Converted to Booking", "Not Interested", "Closed"],
+      "default": "New"
+    },
+    "internalNotes": {
+      "type": "text"
+    },
+    "convertedBookingId": {
+      "type": "string"
+    },
+    "submittedAt": {
+      "type": "datetime"
+    }
+  }
+}
