@@ -283,7 +283,7 @@ Admin: Abhi Shinde`;
     const remainingBalance = totalAmount - advanceAmount;
     const nowIso = new Date().toISOString();
 
-    const bookingRef = `LL-BKG-${new Date().getFullYear()}-${String(this.bookings.length + 1).padStart(3, '0')}`;
+    const bookingRef = `ASP-BKG-${new Date().getFullYear()}-${String(this.bookings.length + 1).padStart(3, '0')}`;
 
     const newBooking: Booking = {
       id: `bkg-${Date.now()}`,
@@ -368,7 +368,7 @@ Admin: Abhi Shinde`;
 
     const newBooking: Booking = {
       id: `bkg-${Date.now()}`,
-      bookingRef: `LL-BKG-${new Date().getFullYear()}-${uniqueNum}`,
+      bookingRef: `ASP-BKG-${new Date().getFullYear()}-${uniqueNum}`,
       createdAt: nowIso,
       updatedAt: nowIso,
       clientName: bookingData.clientName,

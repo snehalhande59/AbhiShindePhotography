@@ -14,7 +14,7 @@ export async function POST(req: Request) {
 
     // If actual RAZORPAY_KEY_ID & SECRET are in env, invoke Razorpay API.
     // Otherwise, generate compliant order structure for development.
-    const keyId = process.env.RAZORPAY_KEY_ID || 'rzp_test_LensAndLightTestKey';
+    const keyId = process.env.RAZORPAY_KEY_ID || 'rzp_test_AbhiShindePhotoKey';
     const fakeOrderId = `order_${crypto.randomBytes(8).toString('hex')}`;
 
     return NextResponse.json({

@@ -112,7 +112,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <strong className="text-foreground block">Main Studio Gallery:</strong>
-                    <span>Lens & Light Studio, Lane 7, Koregaon Park / Kalyani Nagar, Pune, Maharashtra 411006</span>
+                    <span>ABHISHINDE PHOTOGRAPHY Studio, Sinnar / Nashik, Pune & Mumbai, Maharashtra 422103</span>
                   </div>
                 </div>
 
@@ -134,8 +134,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <strong className="text-foreground block">Email Inquiries:</strong>
-                    <a href="mailto:contact@lensandlightstudio.com" className="hover:text-gold transition-colors">
-                      contact@lensandlightstudio.com
+                    <a href="mailto:abhishinde.photography@gmail.com" className="hover:text-gold transition-colors">
+                      abhishinde.photography@gmail.com
                     </a>
                   </div>
                 </div>

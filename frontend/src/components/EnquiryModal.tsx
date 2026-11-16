@@ -371,7 +371,7 @@ export default function EnquiryModal({
                 <span className="text-foreground font-medium">{submittedEnquiry.shootLocation}</span>
               </div>
               <div className="pt-2 text-[11px] text-zinc-400 border-t border-border italic">
-                Our team will contact you shortly. A copy has been staged for WhatsApp delivery to Studio Admin Abhi Shinde (+91 7822053169).
+                Enquiry Received: Your enquiry has been received and saved. Booking will be officially confirmed after studio review and approval by Abhi Shinde (+91 7822053169).
               </div>
             </div>
 

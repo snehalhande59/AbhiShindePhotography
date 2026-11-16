@@ -62,14 +62,14 @@ export default function RootLayout({
               email: 'abhishinde.photography@gmail.com',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'Lane 7, Koregaon Park',
-                addressLocality: 'Pune',
+                streetAddress: 'Sinnar / Nashik, Pune & Mumbai',
+                addressLocality: 'Sinnar, Nashik',
                 addressRegion: 'Maharashtra',
-                postalCode: '411006',
+                postalCode: '422103',
                 addressCountry: 'IN',
               },
               priceRange: '₹25,000 - ₹2,25,000',
-              url: 'https://lensandlightstudio.com',
+              url: 'https://abhishindephotography.com',
               sameAs: [
                 'https://www.instagram.com/abhishinde_photography',
                 'https://www.instagram.com/abhishinde_06',

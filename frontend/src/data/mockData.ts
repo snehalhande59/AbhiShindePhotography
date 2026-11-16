@@ -557,8 +557,8 @@ export const INITIAL_TESTIMONIALS: Testimonial[] = [
 export const INITIAL_BOOKINGS: Booking[] = [
   {
     id: 'bkg-101',
-    bookingRef: 'LL-BKG-2026-001',
-    enquiryId: 'LL-ENQ-0001',
+    bookingRef: 'ASP-BKG-2026-001',
+    enquiryId: 'ASP-ENQ-0001',
     createdAt: '2026-03-01T10:30:00Z',
     updatedAt: '2026-03-02T12:00:00Z',
     clientName: 'Siddharth & Snehal Deshmukh',
@@ -604,8 +604,8 @@ export const INITIAL_BOOKINGS: Booking[] = [
   },
   {
     id: 'bkg-102',
-    bookingRef: 'LL-BKG-2026-002',
-    enquiryId: 'LL-ENQ-0002',
+    bookingRef: 'ASP-BKG-2026-002',
+    enquiryId: 'ASP-ENQ-0002',
     createdAt: '2026-03-04T14:15:00Z',
     updatedAt: '2026-03-05T09:30:00Z',
     clientName: 'Kavita & Pranav More',
@@ -643,7 +643,7 @@ export const INITIAL_BOOKINGS: Booking[] = [
   },
   {
     id: 'bkg-103',
-    bookingRef: 'LL-BKG-2026-003',
+    bookingRef: 'ASP-BKG-2026-003',
     createdAt: '2026-03-10T11:00:00Z',
     updatedAt: '2026-03-10T11:00:00Z',
     clientName: 'Vikramaditya Rao',
@@ -693,7 +693,7 @@ export const INITIAL_CLIENT_ALBUMS: ClientAlbum[] = [
 export const INITIAL_ENQUIRIES: Enquiry[] = [
   {
     id: 'enq-101',
-    enquiryId: 'LL-ENQ-0001',
+    enquiryId: 'ASP-ENQ-0001',
     customerName: 'Harshwardhan Jagtap',
     mobileNumber: '+919881122334',
     whatsappNumber: '+919881122334',
@@ -716,12 +716,12 @@ export const INITIAL_ENQUIRIES: Enquiry[] = [
     notificationStatus: {
       adminWhatsAppSent: true,
       customerWhatsAppSent: true,
-      adminWhatsAppUrl: 'https://wa.me/917822053169?text=NEW%20PHOTOGRAPHY%20ENQUIRY%20LL-ENQ-0001%20from%20Harshwardhan%20Jagtap',
+      adminWhatsAppUrl: 'https://wa.me/917822053169?text=NEW%20PHOTOGRAPHY%20ENQUIRY%20ASP-ENQ-0001%20from%20Harshwardhan%20Jagtap',
     },
   },
   {
     id: 'enq-102',
-    enquiryId: 'LL-ENQ-0002',
+    enquiryId: 'ASP-ENQ-0002',
     customerName: 'Dr. Meera Salunkhe',
     mobileNumber: '+919422388776',
     whatsappNumber: '+919422388776',
@@ -748,7 +748,7 @@ export const INITIAL_ENQUIRIES: Enquiry[] = [
   },
   {
     id: 'enq-103',
-    enquiryId: 'LL-ENQ-0003',
+    enquiryId: 'ASP-ENQ-0003',
     customerName: 'Rajesh & Pooja Kadam',
     mobileNumber: '+919823155442',
     whatsappNumber: '+919823155442',
